@@ -6,6 +6,7 @@ import CloseIcon from '@material-ui/icons/Clear';
 import { func } from 'prop-types';
 
 function VideoCard(props){
+  
   return (
     <a href={props.url} target="_blank" style={{textDecoration: 'none', colotr: 'black'}}>
       <div className="body-card">
