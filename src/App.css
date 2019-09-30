@@ -1,22 +1,80 @@
-.App {
-  text-align: center;
+.card {
+  margin: 60px auto;
+  max-width: 780px;
+  max-height: 380px;
+  overflow: hidden;
+  padding: 1rem;
+  border-top: 0.5px solid rgba(139, 128, 128, 0.712);
+  border-bottom: 0.5px solid rgba(139, 128, 128, 0.712);
 }
 
-.App-logo {
-  height: 40vmin;
+.header-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-card-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 2;
+}
+
+.header-card-left p {
+  margin-left: 10px;
+}
+
+.header-card-right .subscribe-btn {
+  background-color: rgb(204,0,0);
+  color: white;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+}
+
+.header-card-right .subscribe-btn:hover {
+  background-color: rgb(236, 47, 47)
+}
+
+.header-card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.body-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
-.App-link {
-  color: #09d3ac;
+.body-card {
+  max-width: 260px;
+  margin: 0 5px;
+}
+
+.body-card .body-cover {
+  position: relative;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.body-card .body-cover p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.808);
+  border-radius: 5px;
+  color: white;
+  padding: 2px 5px;
+  font-weight: 600;
+  bottom: 0;
+  right: 0;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
